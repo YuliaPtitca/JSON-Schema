@@ -24,7 +24,7 @@ class MobileBankApiTestV3 {
                 // специализированные проверки - лучше
                 // .contentType(ContentType.JSON)
                 // .body("", hasSize(3))
-                .body("[0].currency", equalTo("RUR"))
+                .body("[0].currency", equalTo("RUB"))
                 .body("[1].currency", equalTo("USD"))
                 .body("[2].currency", equalTo("RUB"))
                 .body(matchesJsonSchemaInClasspath("accounts.schema.json"));
